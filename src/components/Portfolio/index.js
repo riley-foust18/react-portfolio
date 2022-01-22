@@ -1,9 +1,11 @@
 import React, {useEffect} from "react";
+import Project from "../Project";
 
 function Portfolio() {
   return (
     <div>
-      <h2>Portfolio</h2>
+      <h2 className="mx-2">Portfolio</h2>
+      <Project></Project>
     </div>
   );
 }

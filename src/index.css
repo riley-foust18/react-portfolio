@@ -122,6 +122,26 @@ header a {
   text-decoration: none;
 }
 
+footer {
+  background-image: url('./assets/images/black-white-topography-map-mugs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.icon {
+  margin: auto;
+  max-width: 100px;
+  padding: 10px;
+}
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -193,11 +213,34 @@ textarea {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  text-align: center;
+}
+
+.project-card {
+  width: 45%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.project-card-description {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-row-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .space-between {
