@@ -137,9 +137,9 @@ footer {
 }
 
 .icon {
-  margin: auto;
-  max-width: 100px;
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 80px;
 }
 
 button {
