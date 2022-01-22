@@ -3,7 +3,7 @@ import photo from '../../assets/images/IMG_9557.JPG'
 
 function About() {
   return (
-    <div className="">
+    <div className="about-me">
       <h2 className="mx-2">About Me</h2>
       <div className="flex-row">
         <img src={photo} className="mx-2" style={{width: '40%'}} />
