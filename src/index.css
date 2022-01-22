@@ -22,7 +22,7 @@ main {
 
 html,
 body {
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -32,10 +32,17 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
+  background-image: url(./assets/images/topo-white.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
   font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
 
+main {
+  padding-bottom: 8.5rem; 
 }
 
 h1,
@@ -87,7 +94,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  background-image: url('./assets/images/black-white-topography-map-mugs.jpg');
+  background-image: url('./assets/images//topo-black.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -104,7 +111,7 @@ header h2 {
 
 header nav ul li a {
   margin: auto 0;
-  color: var(--white);
+  color: var(--light);
   text-decoration: none;
   padding: 0 10px;
 }
@@ -123,11 +130,15 @@ header a {
 }
 
 footer {
-  background-image: url('./assets/images/black-white-topography-map-mugs.jpg');
+  background-image: url('./assets/images//topo-black.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-position: 80%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 6.5rem;
 }
 
 .footer-icons {
