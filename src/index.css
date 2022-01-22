@@ -357,5 +357,11 @@ button {
   background-color: var(--light);
   border: solid 3px var(--dark);
   border-radius: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.contactForm {
+  background-color: var(--light);
+  border: solid 3px var(--dark);
+  border-radius: 10px;
 }

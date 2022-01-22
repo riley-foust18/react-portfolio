@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import photo from '../../assets/images/IMG_9557.JPG'
 
 function About() {
