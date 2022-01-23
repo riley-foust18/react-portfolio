@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import linkedIn from '../../assets/images/linkedin-logo.png';
-import github from '../../assets/images/github-icon.png';
+import github from '../../assets/images/github-icon-red.png';
 import stackOverflow from '../../assets/images/stackoverflow-icon.png'
 
 function Footer() {

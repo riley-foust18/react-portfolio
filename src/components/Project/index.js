@@ -1,44 +1,26 @@
 import React, {useState} from "react";
 import photo from '../../assets/images/weather-buddy-full.png';
+import icon from '../../assets/images/github-icon.png';
 
-function Project() {
+function Project(props) {
+  const {
+    projects = []
+  } = props;
+
   return (
     <div className="project-section">
-      <div className="project-card">
-        <img className="project-card-img" src={photo}/>
-        <div className="project-card-description">
-          <a className="project-card-icon" href="https://github.com/riley-foust18/WeatherBuddy">WeatherBuddy</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-          <a className="project-card-icon" href="github.com">Link</a>
+      {projects.map((project) => (
+        <div className="project-card">
+          <img className="project-card-img" src={photo}/>
+          <div className="project-card-box">
+            <a className="project-card-name" href={`${project.link}`}>{project.name}</a>
+            <a className="project-card-icon" href={`${project.githubLink}`}>
+              <img src={icon} />
+            </a>
+            <p className="project-card-description">{project.description}</p>
+          </div>
         </div>
-      </div>
-
-      <div className="project-card">
-        <img className="project-card-img" src={photo}/>
-        <div className="project-card-description">
-          <a className="project-card-icon" href="https://github.com/riley-foust18/WeatherBuddy">WeatherBuddy</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-        </div>
-      </div>
-
-      <div className="project-card">
-        <img className="project-card-img" src={photo}/>
-        <div className="project-card-description">
-          <a className="project-card-icon" href="https://github.com/riley-foust18/WeatherBuddy">WeatherBuddy</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-        </div>
-      </div>
-      
-      <div className="project-card">
-        <img className="project-card-img" src={photo}/>
-        <div className="project-card-description">
-          <a className="project-card-icon" href="https://github.com/riley-foust18/WeatherBuddy">WeatherBuddy</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-          <a className="project-card-icon" href="github.com">Link</a>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

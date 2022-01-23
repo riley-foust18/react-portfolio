@@ -44,47 +44,6 @@ body {
   position: relative;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-top: 0;
-}
-
 a {
 	border-radius: 5px;
 	color: var(--primary);
@@ -102,6 +61,7 @@ a {
 
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-image: url('./assets/images//topo-black.jpg');
   background-size: cover;
@@ -148,6 +108,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: auto;
+  align-items: center;
 }
 
 .icon {
@@ -160,17 +121,8 @@ button:hover {
   opacity: .8;
 }
 
-button[disabled] {
-  cursor: default;
-  opacity: .8;
-}
-
 img {
   max-width: 100%;
-}
-
-span[role="img"] {
-  cursor: default;
 }
 
 form {
@@ -193,14 +145,6 @@ input:focus {
 
 li {
   list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-nav  li {
-  cursor: pointer;
 }
 
 textarea {
@@ -238,16 +182,11 @@ textarea {
   background-size: cover;
 }
 
-.project-card-icon {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-card-description {
+.project-card-box {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0;
   top: 0;
   bottom: 6px;
   left: 0;
@@ -258,7 +197,32 @@ textarea {
   transition: opacity .3s, visibility .3s;
 }
 
-.project-card:hover .project-card-description {
+.project-card-name {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.project-card-name:hover,
+.project-card-icon img:hover {
+  opacity: 50%;
+  transition-duration: 0.3s;
+}
+
+.project-card-icon,
+.project-card-icon img {
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.project-card-description {
+  flex: 100%;
+  margin: 0;
+}
+
+.project-card:hover .project-card-box {
   visibility: visible;
   opacity: 1;
 }
@@ -324,18 +288,6 @@ textarea {
 .py-2 {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
-}
-
-.card {
-  width: 25%;
-  text-align: center;
-}
-
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
 }
 
 button {
