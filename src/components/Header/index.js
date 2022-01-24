@@ -8,7 +8,7 @@ function Header(props) {
     currentCategory,
   } = props;
   return (
-    <header className="flex-row px-1">
+    <header className="px-1">
       <h2>
         <a data-testid="link" href="/">FOUST</a>
       </h2>
