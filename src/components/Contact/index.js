@@ -36,7 +36,7 @@ function ContactForm() {
 
   return (
     <section className="contactForm">
-      <h2 data-testid="h1tag" className="mx-2">Contact me</h2>
+      <h2 className="mx-2">Contact me</h2>
       <form id="contact-form" onSubmit={handleSubmit} className="mx-2">
         <div className="my-2">
           <label htmlFor="name">Name:</label>
@@ -48,7 +48,7 @@ function ContactForm() {
         </div>
         <div className="my-2">
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} style={{width: '100%'}}/>
         </div>
         {errorMessage && (
           <div>

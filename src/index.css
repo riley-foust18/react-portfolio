@@ -334,6 +334,10 @@ button {
   border-radius: 10px;
 }
 
+.contactForm form {
+  width: 50%;
+}
+
 @media only screen and (max-width: 963px) {
   .about-me-box {
     flex-wrap: wrap;
@@ -362,6 +366,10 @@ button {
   header nav ul {
     justify-content: space-around;
     padding: 0;
+  }
+
+  .contactForm form {
+    width: 80%;
   }
 }
 
