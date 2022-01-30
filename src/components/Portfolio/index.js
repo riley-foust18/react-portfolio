@@ -20,35 +20,35 @@ function Portfolio() {
       name: 'Weather Buddy',
       link: 'https://riley-foust18.github.io/WeatherBuddy/',
       githubLink: 'https://github.com/riley-foust18/WeatherBuddy', 
-      description: 'Portraits of people in my life' ,
+      description: 'HTML, CSS, JavaScript, API' ,
       image: weatherBuddy
     },
     {
       name: 'MoneyTrack',
       link: 'https://money-track-rf.herokuapp.com/',
       githubLink: 'https://github.com/riley-foust18/MoneyTrack', 
-      description: 'Delicious delicacies' ,
+      description: 'NoSQL, IndexDB, HTML, CSS' ,
       image: moneyTrack
     },
     {
       name: 'Note Taker',
       link: 'https://shrouded-cliffs-50884.herokuapp.com/',
       githubLink: 'https://github.com/riley-foust18/note-taker', 
-      description: 'Fields, farmhouses, waterfalls, and the beauty of nature' ,
+      description: 'HTML, CSS, JavaScript' ,
       image: noteTaker
     },
     {
       name: 'Dinner Guru',
       link: 'https://detrasmental.github.io/the-dinner-guru/',
       githubLink: 'https://github.com/detrasmental/the-dinner-guru', 
-      description: 'Fields, farmhouses, waterfalls, and the beauty of nature' ,
+      description: 'HTML, CSS, JavaScript, API' ,
       image: dinnerGuru
     },
     {
       name: 'Password App',
       link: 'https://riley-foust18.github.io/PasswordApp/',
       githubLink: 'https://github.com/riley-foust18/PasswordApp', 
-      description: 'Fields, farmhouses, waterfalls, and the beauty of nature' ,
+      description: 'HTML, CSS, JavaScript' ,
       image: passwordApp
     }
   ]);
