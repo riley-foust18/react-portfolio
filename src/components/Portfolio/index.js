@@ -5,7 +5,7 @@ import moneyTrack from '../../assets/images/money-track.jpg';
 import runBuddy from '../../assets/images/run-buddy.png';
 import noteTaker from '../../assets/images/note-taker.png';
 import dinnerGuru from '../../assets/images/dinner-guru.png';
-import passwordApp from '../../assets/images/password-app.png';
+import interviewKey from '../../assets/images/logo-interview-key.png';
 
 function Portfolio() {
   const [projects] = useState([
@@ -45,11 +45,11 @@ function Portfolio() {
       image: dinnerGuru
     },
     {
-      name: 'Password App',
-      link: 'https://riley-foust18.github.io/PasswordApp/',
-      githubLink: 'https://github.com/riley-foust18/PasswordApp', 
-      description: 'HTML, CSS, JavaScript' ,
-      image: passwordApp
+      name: 'Interview Key',
+      link: 'https://morning-coast-83495.herokuapp.com/',
+      githubLink: 'https://github.com/Danster4/interview-key', 
+      description: 'MERN' ,
+      image: interviewKey
     }
   ]);
 
